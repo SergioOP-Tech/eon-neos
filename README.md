@@ -1,7 +1,7 @@
 NEOS
 ======
 
-This is the operating system for your [EON Dashcam Development Kit](https://shop.comma.ai/products/eon-dashcam-devkit).
+This is the operating system for your [comma two](https://comma.ai/shop/products/comma-two-devkit) and [EON Dashcam Development Kit](https://comma.ai/shop/products/eon-gold-dashcam-devkit).
 
 Automatic Update
 ------
@@ -11,32 +11,23 @@ When the time comes, you won't have to do anything, and this should just automat
 Manual Update / Restore
 ------
 
-Requirements: unzip, simg2img, fastboot
+<b>NOTE: This will wipe your device</b>
 
-Clone this repo. Hold power and volume to enter fastboot mode on your EON. Then run:
-
-```
-./download.py
-./flash.sh
-```
-
-<b>NOTE: This will wipe your EON</b>
-
-Restoring on OS X
+Restoring on Linux/OS X
 ------
 
-1. Install Homebrew if you don't already have it. It's like apt-get for OS X (a package manager) https://brew.sh
-2. `brew install unzip simg2img` which will be needed to build the image
-3. `brew cask install android-platform-tools` to install fastboot, which will be required to actually flash your Eon
-4. Put your Eon into fastboot mode by turning off your Eon, then holding EON: volume up + power. EON Gold: volume down + power. Select fastboot if needed from the menu.
-5. Clone this repo, then cd into the cloned repo and run `./download.py`
-6. When done, run `./flash.sh` Your Eon will now be flashed. DO NOT DISCONNECT THE DEVICE!
-7. Congratulations! You may now setup your Eon again.
-
-Restoring on Linux
-------
-Submit a PR with instructions.
+1. Connect your comma two (via a USB-C to USB-A cable) or EON (via a USB-mini-B to USB-A cable) to your computer
+2. Open a terminal
+3. Clone this repo `git clone https://github.com/commaai/eon-neos.git`, then cd into the cloned repo `cd eon-neos`
+4. Run `./download.py`
+5. Put your device into fastboot mode by turning off your device, then holding volume down + power (comma two, EON Gold), or volume up + power (EON).
+6. Run `./flash.sh` DO NOT DISCONNECT THE DEVICE!
 
 Restoring on Windows
 ------
-Submit a PR with instructions.
+1. Connect your comma two (via a USB-C to USB-A cable) or EON (via a USB-mini-B to USB-A cable) to your computer
+2. Download and extract this repository
+3. Download & install Python 3
+4. Run download.py to download NEOS and flashing tools
+5. Put your device into fastboot mode by turning off your device, then holding volume down + power (comma two, EON Gold), or volume up + power (EON).
+6. Run flash.ps1 (right click, run with powershell). DO NOT DISCONNECT THE DEVICE!

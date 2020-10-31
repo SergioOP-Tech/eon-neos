@@ -4,4 +4,7 @@ META-INF
 system.simg
 ota-signed-*
 recovery*
-
+platform-tools-latest-windows.zip
+platform-tools-latest-linux.zip
+platform-tools-latest-darwin.zip
+platform-tools/
